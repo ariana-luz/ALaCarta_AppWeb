@@ -1,3 +1,15 @@
+<!-- <section>
+  @if (isLoggedIn) {
+  <p>Bienvenido, {{username}}</p>
+  <img 
+  (click)="greet()"
+  alt="photo" 
+  scr="https://github.com/ariana-luz.png" />
+  } @else {
+  <button (click)="greet()">Inicia sesión</button>
+  }
+</section> -->
+
 <div class="parent">
   <div class="main">
     <input type="checkbox" id="chk" aria-hidden="true">
@@ -15,7 +27,8 @@
     <div class="login">
       <form>
         <label for="chk" aria-hidden="true">Login</label>
-        <input type="email" name="Email" [(ngModel)]='loginObj.email' placeholder="Email" required="">
+        <input type="email" name="Email"
+         [(ngModel)]='loginObj.email' placeholder="Email" required="">
         <input type="password" name="Password" [(ngModel)]="loginObj.password" placeholder="Password" required="">
         <button (click)="onLogin()">Login</button>
       </form>

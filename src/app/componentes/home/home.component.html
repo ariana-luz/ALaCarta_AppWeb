@@ -1,15 +1,32 @@
 <header>
     <nav>
         <div>Logo A la carta</div>
+        <div>
+            @if (isLoggedIn) {
+            <p>Bienvenido, {{username}}</p>
+            <img alt="photo" scr="https://github.com/ariana-luz.png" />
+            }
+        </div>
         <div class="button">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-magnifying-glass" (click)="BuscarPlatos()"></i>
             <i class="fa-solid fa-cart-shopping"></i>
-            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-user" (click)="verPerfil()"></i>
         </div>
     </nav>
 </header>
 <div class="home">Menú</div>
-<section>Platos</section>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptas maiores nam dolores inventore asperiores
+    voluptatibus saepe quam provident. Consequuntur mollitia quisquam adipisci eius reiciendis dignissimos labore
+    cupiditate temporibus voluptatem.</p>
+<section>
+
+    <app-platos (addFavoriteEvent)="getFavorite($event)" username=" {{ username }}"></app-platos>
+
+    @if (favDish != '') {
+    <p>Tu selección de platos es {{favDish}}</p>
+    }
+
+</section>
 <section>Platos veganos</section>
 <footer>
     <div class="logo">Logo A la carta</div>

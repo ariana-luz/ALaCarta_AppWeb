@@ -6,13 +6,20 @@ import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-login',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+    selector: 'app-login',
+    standalone: true,
+    templateUrl: './login.component.html',
+    styleUrl: './login.component.scss',
+    imports: [CommonModule, FormsModule]
 })
 export class LoginComponent {
+
+  username='ariana';
+  isLoggedIn= false; // está funcionando como un state
+
+  greet(){
+    alert('Hola!!');
+  }
 
   loginObj: any = {
     "email": "",
@@ -29,7 +36,7 @@ export class LoginComponent {
         alert('login success');
         localStorage.setItem('loginToken', res.token);
         this.router.navigateByUrl('/home');
-        console.log(this.loginObj)
+        this.isLoggedIn= true;
       } else {
         alert(res.message);
         console.log(this.loginObj)
