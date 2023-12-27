@@ -1,6 +1,6 @@
 section {
-	background-color: #f45b69;
-	font-family: "Asap", sans-serif;
+	background-color: #C6D03B;
+    font-family: "Overpass Mono", monospace;
 	height: 100vh;
 }
 
@@ -40,7 +40,7 @@ section {
 .login::before {
 	left: 40%;
 	bottom: -130%;
-	background-color: rgba(69, 105, 144, 0.15);
+	background-color: rgba(138, 226, 22, 0.2);
 	-webkit-animation: wawes 6s infinite linear;
 	-moz-animation: wawes 6s infinite linear;
 	animation: wawes 6s infinite linear;
@@ -49,14 +49,14 @@ section {
 .login::after {
 	left: 35%;
 	bottom: -125%;
-	background-color: rgba(2, 128, 144, 0.2);
+	background-color: rgba(135, 144, 2, 0.2);
 	-webkit-animation: wawes 7s infinite;
 	-moz-animation: wawes 7s infinite;
 	animation: wawes 7s infinite;
 }
 
 .login>input {
-	font-family: "Asap", sans-serif;
+	font-family: "Overpass Mono", monospace;
 	display: block;
 	border-radius: 5px;
 	font-size: 16px;
@@ -68,7 +68,7 @@ section {
 }
 
 .login>button {
-	font-family: "Asap", sans-serif;
+	font-family: "Overpass Mono", monospace;
 	cursor: pointer;
 	color: #fff;
 	font-size: 16px;
@@ -79,14 +79,14 @@ section {
 	margin-top: 10px;
 	margin-left: -5px;
 	border-radius: 5px;
-	background-color: #f45b69;
+	background-color: #f5612e;
 	-webkit-transition: background-color 300ms;
 	-moz-transition: background-color 300ms;
 	transition: background-color 300ms;
 }
 
 .login>button:hover {
-	background-color: #cb2d3e;
+	background-color: #f52e2e;
 }
 
 @-webkit-keyframes wawes {
