@@ -1,20 +1,4 @@
-<header>
-    <nav>
-        <div>Logo A la carta</div>
-        <!-- <div>
-            @if (isLoggedIn) {
-            <p>Bienvenido, {{username}}</p>
-            <img alt="photo" scr="https://github.com/ariana-luz.png" />
-            }
-        </div> -->
-        <div class="button">
-            <i class="fa-solid fa-magnifying-glass" (click)="BuscarPlatos()"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-            <i class="fa-solid fa-user" (click)="verPerfil()"></i>
-        </div>
-    </nav>
-</header>
-
+<app-header></app-header>
 <body>
     <h1>
         Mi Menú
@@ -235,13 +219,5 @@
         }
 
     </section>
-    <footer>
-        <div class="logo">Logo A la carta</div>
-        <div>© A la carta 2023</div>
-        <div class="button">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-tiktok"></i>
-        </div>
-    </footer>
+<app-footer></app-footer>
 </body>

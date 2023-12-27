@@ -11,5 +11,5 @@ export const routes: Routes = [
     {path: 'perfil', component:PerfilComponent},
     {path: 'buscador', component:BuscadorComponent},
     {path: 'platos', component:PlatosComponent},
-    {path: '', redirectTo:'platos', pathMatch: 'full'}
+    {path: '', redirectTo:'login', pathMatch: 'full'}
 ];

@@ -5,13 +5,15 @@ import { Plato1Component } from "../plato1/plato1.component";
 import { Plato4Component } from "../plato4/plato4.component";
 import { Plato3Component } from "../plato3/plato3.component";
 import { Plato2Component } from "../plato2/plato2.component";
+import { FooterComponent } from "../footer/footer.component";
+import { HeaderComponent } from "../header/header.component";
 
 @Component({
     selector: 'app-home',
     standalone: true,
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss',
-    imports: [PlatosComponent, Plato1Component, Plato4Component, Plato3Component, Plato2Component]
+    imports: [PlatosComponent, Plato1Component, Plato4Component, Plato3Component, Plato2Component, FooterComponent, HeaderComponent]
 })
 export class HomeComponent {
     username = 'Ariana';
@@ -24,10 +26,5 @@ export class HomeComponent {
     getFavorite(dishName: string) {
         this.favDish = dishName;
     } //un evento que cuando recupere el favorito, lo lleve al Home. El plato elegido es el que haya llegado a favDish
-    verPerfil() {
-        this.router.navigateByUrl('/perfil');
-    }
-    BuscarPlatos(){
-        this.router.navigateByUrl('/buscador');
-    }
+
 }
