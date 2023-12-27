@@ -9,10 +9,11 @@ section {
 	background-color: white;
 	padding: 40px 30px 30px 30px;
 	border-radius: 10px;
-	position: relative;
+	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: 400px;
+	height: 250px;
+	width: 450px;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
