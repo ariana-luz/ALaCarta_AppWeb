@@ -1,28 +1,18 @@
-<p>Platos de {{username}}</p>
-<!--<ul>
-    @for (dish of dishes; track dish.id) {
-    <li (click)="fav2(item.title)">{{item.title}}</li>
-    Quiero elegir un elemento de la lista y avisarle al Home que lo elegí
-    }
+<body>
+    <h1>Platos</h1>
+    <h2>Selecciona tus platos</h2>
+    <div class="container">
+        <div class='carrot'></div>
+        <ul>
 
-</ul> -->
+            @for (item of miMenu.results; track $index) {
+            <li>
+                <button (click)="fav2(item.title)">{{item.title}}</button>
+            </li>
+            <img [src]="item.image" />
+            }
 
-<!-- <div>
-    <li>
-        @for (item of miMenu.results; track $index) {
-        <h1>{{item.title}}</h1>
-        <img [src]="item.image" />
-        }
-    </li>
-</div> -->
+        </ul>
 
-<div>
-
-    @for (item of miMenu.results; track $index) {
-    <li>
-        <button (click)="fav2(item.title)">{{item.title}}</button>
-    </li>
-    <img [src]="item.image" />
-    }
-
-</div>
+    </div>
+</body>

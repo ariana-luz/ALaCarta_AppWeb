@@ -14,7 +14,7 @@ import { Plato2Component } from "../plato2/plato2.component";
     imports: [PlatosComponent, Plato1Component, Plato4Component, Plato3Component, Plato2Component]
 })
 export class HomeComponent {
-    username = 'ariana';
+    username = 'Ariana';
     isLoggedIn = true;
     favDish = '';
 
